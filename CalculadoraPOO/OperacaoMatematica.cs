@@ -1,11 +1,10 @@
 ﻿namespace CalculadoraPOO
 {
-    internal enum Operacoes
+    internal enum OperacaoMatematica
     {
         Soma = 1,
-        Divisao,
         Subtracao,
         Multiplicacao,
-        Historico
+        Divisao
     }
 }
