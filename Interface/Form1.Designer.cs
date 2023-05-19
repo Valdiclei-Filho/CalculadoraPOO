@@ -41,12 +41,12 @@
             button9 = new Button();
             button8 = new Button();
             button10 = new Button();
-            button11 = new Button();
-            button12 = new Button();
+            btnNumero1 = new Button();
+            btnNumero2 = new Button();
             button13 = new Button();
             button14 = new Button();
-            button15 = new Button();
-            label1 = new Label();
+            btnEnter = new Button();
+            lblDigito = new Label();
             SuspendLayout();
             // 
             // propertyGrid2
@@ -167,24 +167,25 @@
             button10.Text = "6";
             button10.UseVisualStyleBackColor = true;
             // 
-            // button11
+            // btnNumero1
             // 
-            button11.Location = new Point(14, 162);
-            button11.Name = "button11";
-            button11.Size = new Size(33, 28);
-            button11.TabIndex = 17;
-            button11.Text = "1";
-            button11.UseVisualStyleBackColor = true;
+            btnNumero1.Location = new Point(14, 162);
+            btnNumero1.Name = "btnNumero1";
+            btnNumero1.Size = new Size(33, 28);
+            btnNumero1.TabIndex = 17;
+            btnNumero1.Text = "1";
+            btnNumero1.UseVisualStyleBackColor = true;
+            btnNumero1.Click += btnNumero1_Click;
             // 
-            // button12
+            // btnNumero2
             // 
-            button12.Location = new Point(53, 162);
-            button12.Name = "button12";
-            button12.Size = new Size(33, 28);
-            button12.TabIndex = 18;
-            button12.Text = "2";
-            button12.UseVisualStyleBackColor = true;
-            button12.Click += button12_Click;
+            btnNumero2.Location = new Point(53, 162);
+            btnNumero2.Name = "btnNumero2";
+            btnNumero2.Size = new Size(33, 28);
+            btnNumero2.TabIndex = 18;
+            btnNumero2.Text = "2";
+            btnNumero2.UseVisualStyleBackColor = true;
+            btnNumero2.Click += btnNumero2_Click;
             // 
             // button13
             // 
@@ -205,35 +206,36 @@
             button14.UseVisualStyleBackColor = true;
             button14.Click += button14_Click;
             // 
-            // button15
+            // btnEnter
             // 
-            button15.Location = new Point(131, 94);
-            button15.Name = "button15";
-            button15.Size = new Size(33, 96);
-            button15.TabIndex = 21;
-            button15.Text = "E\r\nN\r\nT\r\nE\r\nR\r\n";
-            button15.UseVisualStyleBackColor = true;
+            btnEnter.Location = new Point(131, 94);
+            btnEnter.Name = "btnEnter";
+            btnEnter.Size = new Size(33, 96);
+            btnEnter.TabIndex = 21;
+            btnEnter.Text = "E\r\nN\r\nT\r\nE\r\nR\r\n";
+            btnEnter.UseVisualStyleBackColor = true;
+            btnEnter.Click += btnEnter_Click;
             // 
-            // label1
+            // lblDigito
             // 
-            label1.AutoSize = true;
-            label1.Location = new Point(38, 27);
-            label1.Name = "label1";
-            label1.Size = new Size(38, 15);
-            label1.TabIndex = 22;
-            label1.Text = "label1";
+            lblDigito.AutoSize = true;
+            lblDigito.Location = new Point(38, 27);
+            lblDigito.Name = "lblDigito";
+            lblDigito.Size = new Size(38, 15);
+            lblDigito.TabIndex = 22;
+            lblDigito.Text = "label1";
             // 
             // Form1
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(184, 249);
-            Controls.Add(label1);
-            Controls.Add(button15);
+            Controls.Add(lblDigito);
+            Controls.Add(btnEnter);
             Controls.Add(button14);
             Controls.Add(button13);
-            Controls.Add(button12);
-            Controls.Add(button11);
+            Controls.Add(btnNumero2);
+            Controls.Add(btnNumero1);
             Controls.Add(button10);
             Controls.Add(button8);
             Controls.Add(button9);
@@ -267,11 +269,11 @@
         private Button button9;
         private Button button8;
         private Button button10;
-        private Button button11;
-        private Button button12;
+        private Button btnNumero1;
+        private Button btnNumero2;
         private Button button13;
         private Button button14;
-        private Button button15;
-        private Label label1;
+        private Button btnEnter;
+        private Label lblDigito;
     }
 }
